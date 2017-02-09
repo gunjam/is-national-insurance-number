@@ -62,7 +62,7 @@ describe('isValidNino()', () => {
     assert(output7, 'wasn\'t true when first char was J');
     assert(output8, 'wasn\'t true when first char was K');
     assert(output9, 'wasn\'t true when first char was L');
-    assert(output10, 'wasn\'t true when first char was M]');
+    assert(output10, 'wasn\'t true when first char was M');
     assert(output11, 'wasn\'t true when first char was N');
     assert(output12, 'wasn\'t true when first char was O');
     assert(output13, 'wasn\'t true when first char was P');
