@@ -1,0 +1,38 @@
+{
+  "name": "is-national-insurance-number",
+  "description": "Validates string is a UK National Insurance number",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">4.0.0"
+  },
+  "keywords": [
+    "nino",
+    "National Insurance number",
+    "validation",
+    "gov.uk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gunjam/is-national-insurance-number"
+  },
+  "scripts": {
+    "test": "xo && mocha test"
+  },
+  "author": "Niall Molloy <niallmolloy.digitaldwp@gmail.com>",
+  "maintainers": [
+    "Niall Molloy <niallmolloy.digitaldwp@gmail.com>"
+  ],
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "xo": "^0.17.1"
+  },
+  "license": "MIT",
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "env": [
+      "node",
+      "mocha"
+    ]
+  }
+}
