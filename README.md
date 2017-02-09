@@ -1,16 +1,16 @@
-# H1 Validate UK National Insurance number
+# Validate UK National Insurance number
 
 Only validates strings, and does so strictly (must be upper case, contain no
 spaces, dashes etc).
 
 I recommend santising your input before validation.
 
-# H2 Installing
+## Installing
 ```
   npm install is-national-insurance-number
 ```
 
-# H2 Example usage
+## Example usage
 ```javascript
 const isValidNino = require('is-national-insurance-number');
 
