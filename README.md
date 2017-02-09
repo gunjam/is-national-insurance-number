@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/gunjam/is-national-insurance-number.png?branch=master)](https://travis-ci.org/gunjam/is-national-insurance-number)
+[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/gunjam/is-national-insurance-number.svg?maxAge=2592000)](https://codecov.io/github/gunjam/is-national-insurance-number?branch=master)
 
 # is-national-insurance-number
 
