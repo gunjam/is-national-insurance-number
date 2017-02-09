@@ -7,7 +7,7 @@ I recommend santising your input before validation.
 
 ## Installing
 ```
-  npm install is-national-insurance-number
+  npm install is-national-insurance-number --save
 ```
 
 ## Example usage
