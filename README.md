@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gunjam/is-national-insurance-number.png?branch=master)](https://travis-ci.org/gunjam/is-national-insurance-number)
+
 # is-national-insurance-number
 
 This module provides a function to validate UK National Insurance numbers.
