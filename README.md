@@ -1,6 +1,8 @@
-# Validate UK National Insurance number
+# is-national-insurance-number
 
-Only validates strings, and does so strictly (must be upper case, contain no
+This module provides a function to validate UK National Insurance numbers.
+
+It only validates strings, and does so strictly (must be upper case, contain no
 spaces, dashes etc).
 
 I recommend santising your input before validation.
