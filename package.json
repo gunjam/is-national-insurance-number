@@ -16,13 +16,15 @@
     "url": "https://github.com/gunjam/is-national-insurance-number"
   },
   "scripts": {
-    "test": "xo && mocha test"
+    "test": "xo && mocha test",
+    "coverage": "istanbul cover _mocha --report lcovonly -- -R spec"
   },
   "author": "Niall Molloy <niallmolloy.digitaldwp@gmail.com>",
   "maintainers": [
     "Niall Molloy <niallmolloy.digitaldwp@gmail.com>"
   ],
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "xo": "^0.17.1"
   },
