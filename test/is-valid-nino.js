@@ -9,6 +9,36 @@ describe('isValidNino()', () => {
     assert(output, 'wasn\'t true when nino was valid');
   });
 
+  it('should return false if input is a boolean', () => {
+    const output = isValidNino(true);
+    assert(!output, 'didn\'t return false when boolean');
+  });
+
+  it('should return false if input is null', () => {
+    const output = isValidNino(null);
+    assert(!output, 'didn\'t return false when null');
+  });
+
+  it('should return false if input is undefined', () => {
+    const output = isValidNino(undefined);
+    assert(!output, 'didn\'t return false when undefined');
+  });
+
+  it('should return false if input is a number', () => {
+    const output = isValidNino(1);
+    assert(!output, 'didn\'t return false when number');
+  });
+
+  it('should return false if input is an object', () => {
+    const output = isValidNino({});
+    assert(!output, 'didn\'t return false when object');
+  });
+
+  it('should return false if input is a string and the length isn\'t 9 chars', () => {
+    const output = isValidNino('JJ123123');
+    assert(!output, 'didn\'t return false when length wasn\'t 9');
+  });
+
   it('should return false if not valid format', () => {
     const output1 = isValidNino('JJ12312D');
     const output2 = isValidNino('JJ123123');
