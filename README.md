@@ -24,7 +24,7 @@ isNino('AA111111A'); // true
 isNino('thrasdfag'); // false
 ```
 
-Using provided sanitiser:
+### Using provided sanitiser
 ```javascript
 const sanitiseNino = require('is-national-insurance-number/sanitise-nino');
 
@@ -33,4 +33,28 @@ sanitiseNino('AA-11-22-33-A'); // AA112233A
 sanitiseNino('aa112233A! 😺'); // AA112233A
 ```
 
-Pull requests welcome!
+### Express like example
+View
+```html
+<form method="post">
+  <label for="nino">National Insurance number</label>
+  <input type="text" name="nino" id="nino"/>
+  <button type="submit">Submit</button>
+</form>
+```
+
+Router
+```javascript
+app.post((req, res) => {
+  const nino = sanitiseNino(req.body.nino);
+
+  if (isNino(nino)) {
+    res.redirect('/good-nino-page');
+  } else {
+    const errors = {nino: 'Bad nino!'};
+    res.render('form', {errors});
+  }
+});
+```
+
+Pull requests welcome! 😸
